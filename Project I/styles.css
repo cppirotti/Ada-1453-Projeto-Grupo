@@ -4,7 +4,7 @@
 }
 
 body{
-    padding: 10px 0px;
+    padding: 10px;
 }
 
 header, nav, aside, main, footer{
@@ -17,22 +17,28 @@ header, nav, aside, main, footer{
 
 header{
     background-color: coral;
-
 }
 
 nav{
     background-color: aquamarine;
 }
 
+.content{
+    display: flex;
+    gap: 10px;
+    height: 300px;
+}
+
 aside{
     background-color: lightpink;
+    width: 30%;
 }
 
 main{
     background-color: lightblue;
+    width: 70%;
 }
 
 footer{
-
-background-color: blueviolet;
+    background-color: blueviolet;
 }
