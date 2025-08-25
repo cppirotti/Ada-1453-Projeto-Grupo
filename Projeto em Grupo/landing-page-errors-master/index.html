@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing</title>
 
-    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8"> <!--trecho faltante-->
+    <meta charset="ASCII">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" 
+    href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-    <header class="header">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
 
-        <img src="/assets/logo.png" />
+    <header>
 
-        <button>Buy now</button>
+        <div>
+
+            <ul class="navegador">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+
+        </div>
+            <img src="assets/logo.png" alt="logomarca escrita 'Landing' em vermelho">
+
+            <button>Buy now</button>
+
     </header>
 
     <div class="content">
-        <div>
-            <h2>
-                Introduce Your Product Quickly & Effectively
-            </h2>
-    
-            <span>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            </span>
 
-            <br />
-            <br />
-    
-            <button>
-                Purchase UI Kit
-            </button>
-    
-            <a href="#">Learn More</a>
+        <div class="content__titulo">
+            <h2>Introduce Your Product </h2>
+            <h2>Quickly & Effectively</h2>
         </div>
-    </div>
 
-    <div class=˜area-lateral-direita˜ >
-        <div>
+        <div class="content_texto">
             <p>
-                ©2023 {Yourcompany}
+                Descubra a elegância suprema deste sofá contemporâneo. Seu design sofisticado e conforto inigualável tornam-no uma adição essencial para sua casa. Escolha a excelência, escolha nosso sofá.
             </p>
 
-            <button>Purchase now</button>
+            <p> Seu revestimento em veludo macio proporciona uma sensação acolhedora, enquanto o apoio lombar ajustável      garante relaxamento perfeito. Uma escolha inigualável.</p>
+            <br>
+           
         </div>
 
         <div>
-            <ul >
-                <span>Home</span>
-                Abut
-                <span>Contact</span>
+            <button>Purchase UI Kit</button>
+
+            <a class="saiba__mais" href="#">Learn More</a>
+        </div>
+
+    </div>
+
+
+
+    <footer>
+
+        
+        <div class="header__footer">
+
+            <p> ©2023 Yourcompany</p>
+            <button>Purchase now</button>
+
+        </div>
+
+        <hr>
+        
+        <div class="footer__footer">
+            <ul class="footer__footer__link">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
             </ul>
 
             <ul>
-                <img src="/assets/social.png" alt="Social">
+                <li><img src="assets/social.png" alt="Redes Sociais"></li>
             </ul>
         </div>
-    </div>
+
+    </footer>
 </body>
+
 </html>

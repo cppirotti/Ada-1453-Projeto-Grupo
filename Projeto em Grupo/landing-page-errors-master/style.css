@@ -1,60 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    height: 100vh;
+    box-sizing: border-box;
+
+   
+
+}
+
 .content {
-    padding-top: 240px;
-    padding-bottom: 440px;
+    padding: 60px 20px;
     margin-bottom: 100px;
-    background: url('assets/background.png');
+    background: url('assets/background.png')no-repeat center center;
     background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-origin: border-box;
+    background-size: 60% 100%;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .content div {
-    background-color: #cecece;
-    width: 540px;
+    background-color: transparent;
+    max-width: 540px;
+    width: 100%;
+    padding: 20px;
+
 }
 
-.content div span {
+.content div p {
     color: #D44D51;
-    font-family: Roboto;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px; 
 }
 
-.header {
+header {
+        background-color: transparent;
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        font-family: 'Roboto', Arial, sans-serif;      
+    }
+.navegador{
     display: flex;
-    justify-content: space-around;
+    gap: 30px;
+    list-style-type: none;
+    
+    
 }
 
 ul {
-    color: #CD313E;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
+        color: #CD313E;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        list-style-type: none;
+        display: flex;
+        gap: 30px;
+        
+    }
 
 button {
-    width: 189.131px;
-    height: 36px;
-    flex-shrink: 0;
-    background-color: #CD313E;
-    color: #fff;
+        width: 189px;
+        height: 36px;
+        /*flex-shrink: 0;*/
+        background-color: #CD313E;
+        color: #fff;
+        border: none;/* Add*/
+        cursor: pointer;/*Add*/
+    }
+
+footer {
+        background-color: #F78282;
+        height: 125px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+    }
+
+.header__footer{
+    display:flex;
+    gap: 900px;
 }
 
-.area-lateral-direita{
-    background-color: #F78282; padding-top: 68px;
+.saiba__mais{
+    
+    background-color: transparent;
+    padding: 6px 50px 6px 50px;
+    margin-left: 50px;
+    color: black;
+    border:black solid 2px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;   
+}
+
+.footer__footer{
+    display: flex;
+    gap: 850px;
 
 }
 
-.area-lateral-direita div{
-    display: flex; 
-    justify-content: space-between;
+.footer__footer__link{
+    color: white;
 }
 
-.area-lateral-direita div ul{
-    display: flex; 
-    gap: 30px;
+hr{
+    width: 75%;
+    color: white;
 }
