@@ -5,76 +5,77 @@
     <meta charset="UTF-8"> <!--trecho faltante-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" 
-    href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+    <!--header-->
     <header>
-        <div>
+
+        <nav class="menu__principal">
             <ul class="navegador">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
-        </div>
+        </nav>
+
             <img src="assets/logo.png" alt="logomarca escrita 'Landing' em vermelho">
 
-            <button>Buy now</button>
+            <button class="botao__padrao">Buy now</button>
 
     </header>
-
+    <!--Conteudo Principal-->
     <div class="content">
-
-        <div class="content__titulo">
-            <h2>Introduce Your Product </h2>
-            <h2>Quickly & Effectively</h2>
-        </div>
-
-        <div class="content_texto">
+        <aside>
+        <div class="content__texto__principal">
+            <p class="titulo">
+                Introduce Your Product Quickly & Effectively
+            </p>
+            <br/>
             <p>
                 Descubra a elegância suprema deste sofá contemporâneo. Seu design sofisticado e conforto inigualável tornam-no uma adição essencial para sua casa. Escolha a excelência, escolha nosso sofá.
             </p>
-
+            <br/>
             <p> Seu revestimento em veludo macio proporciona uma sensação acolhedora, enquanto o apoio lombar ajustável      garante relaxamento perfeito. Uma escolha inigualável.</p>
-            <br>
-           
+            <br/>
         </div>
 
-        <div>
-            <button>Purchase UI Kit</button>
+          <div class="content__botoes">
+            <button class="botao__padrao">Purchase UI Kit</button>
+            <button class="saiba__mais" href="#">Learn More</button>
+        </div>   
+    </aside>
 
-            <a class="saiba__mais" href="#">Learn More</a>
-        </div>
+    <section></section>
+
 
     </div>
 
 
-
+    <!--Rodapé-->
     <footer>
 
-        
-        <div class="header__footer">
-
+        <div class="footer__section">
             <p> ©2023 Yourcompany</p>
-            <button>Purchase now</button>
-
+            <button class="botao__padrao">Purchase now</button>
         </div>
+<!-- 
+        <div class="footer__section">
+            <hr/>            
+        </div> -->
 
-        <hr>
-        
         <div class="footer__footer">
-            <ul class="footer__footer__link">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-
             <ul>
-                <li><img src="assets/social.png" alt="Redes Sociais"></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a> </li>
             </ul>
+            <div>
+                <img src="assets/social.png" alt="Redes Sociais">
+            </div>
+            
         </div>
 
     </footer>

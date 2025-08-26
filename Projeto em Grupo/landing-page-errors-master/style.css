@@ -3,57 +3,87 @@
     padding: 0;
 }
 
-.body{
+body{
     height: 100vh;
     box-sizing: border-box;
-
-   
-
+    font-family: 'Roboto', Arial, sans-serif;      
+    font-weight: normal;
 }
 
+main{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+header button{
+    box-shadow: 0 4px 10px #000;
+}
 .content {
-    padding: 60px 20px;
-    margin-bottom: 100px;
-    background: url('assets/background.png')no-repeat center center;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    background: url('assets/background.png');
     background-repeat: no-repeat;
-    background-size: 60% 100%;
-    font-family: 'Roboto', Arial, sans-serif;
+    background-size: contain;
+    background-position: right;
+    display: flex;
 }
 
-.content div {
-    background-color: transparent;
-    max-width: 540px;
-    width: 100%;
-    padding: 20px;
-
+aside{
+    flex: 1;
+    padding-left: 50px;
 }
 
-.content div p {
+section{
+    flex: 2;
+}
+
+.content__texto__principal {
     color: #D44D51;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px; 
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 25px; 
 }
 
-header {
+.titulo{
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: justify;
+    color: #091133;
+}
+
+.content__botoes{
+    padding-top: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+header{
+        position: absolute;
+        width: 100%;
         background-color: transparent;
         display: flex;
         justify-content: space-around;
-        gap: 30px;
-        font-family: 'Roboto', Arial, sans-serif;      
+        padding-top: 10px;
+        
     }
+
 .navegador{
     display: flex;
     gap: 30px;
     list-style-type: none;
     
-    
 }
+
+a{
+    text-decoration: none;
+    color: #CD313E;
+}
+
 
 ul {
         color: #CD313E;
-        font-family: 'Roboto', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -64,7 +94,7 @@ ul {
         
     }
 
-button {
+.botao__padrao, .saiba__mais { 
         width: 189px;
         height: 36px;
         /*flex-shrink: 0;*/
@@ -76,43 +106,43 @@ button {
 
 footer {
         background-color: #F78282;
-        height: 125px;
+        height: auto;
         padding: 20px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         color: white;
+        gap: 30px;
     }
 
-.header__footer{
-    display:flex;
-    gap: 900px;
+footer a{
+    color: #fff;
 }
 
+.footer__section, .footer__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__section{
+    padding: 30px;
+    border-bottom: solid #FFF;
+}
+
+.footer__footer{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .saiba__mais{
-    
     background-color: transparent;
-    padding: 6px 50px 6px 50px;
-    margin-left: 50px;
     color: black;
     border:black solid 2px;
-    text-decoration: none;
     cursor: pointer;
     text-align: center;   
 }
 
-.footer__footer{
-    display: flex;
-    gap: 850px;
-
-}
-
-.footer__footer__link{
-    color: white;
-}
 
 hr{
-    width: 75%;
+    width: 100%;
+    border-width: 1px;
     color: white;
 }
